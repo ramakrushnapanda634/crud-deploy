@@ -165,7 +165,7 @@ exports.userExport = async (req, res) => {
 
         writablestream.on("finish", function () {
             res.json({
-              downloadUrl: `${BASE_URL}/files/export/users.csv`,
+              downloadUrl: "http://localhost:8000/files/export/users.csv",
             });
         });
        if (usersdata.length > 0) {
